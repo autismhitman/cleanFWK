@@ -14,7 +14,7 @@ public final class OrangeHomeTest extends BaseTest {
 	@Test(dataProvider="loginTestData")
 	public void loginlogoutTest(String uname, String pwd) {
 	      
-	     ExtentReport.createTest("loginlogoutTest");
+	   
 		 String title = new OrangeLoginPage() 
 		                    .enterUsername(uname)
 		                    .enterPasswd(pwd)

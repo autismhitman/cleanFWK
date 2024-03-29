@@ -9,6 +9,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.neopane.constants.FrameworkConstants;
 
 public final class ExtentReport {
 	
@@ -22,7 +23,7 @@ public final class ExtentReport {
 	public static void initReports() {
 		if(Objects.isNull(extent)){
 		extent = new ExtentReports();
-		ExtentSparkReporter sparks = new ExtentSparkReporter("index.html");
+		ExtentSparkReporter sparks = new ExtentSparkReporter(FrameworkConstants.getExtentReportFilePath());
 		sparks.config().setDocumentTitle("POM Freamwork");
 		sparks.config().setTheme(Theme.STANDARD);
 		sparks.config().setReportName("Regression Tests");

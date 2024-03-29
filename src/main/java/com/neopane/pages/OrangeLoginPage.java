@@ -18,22 +18,19 @@ public final class OrangeLoginPage extends BasePage {
     
     public OrangeLoginPage enterUsername(String usernametext) {
     	 
-    	sendKeys(usernameTextfield, usernametext, WaitStrategy.VISIBLE);
-    	ExtentLogger.pass("Entered username");
-        return this;
+    	sendKeys(usernameTextfield, usernametext, WaitStrategy.VISIBLE,"username");
+    	return this;
     }
     
     public OrangeLoginPage enterPasswd(String pwdText) {
     	
-    	sendKeys(passwdTextField,pwdText, WaitStrategy.VISIBLE);
-    	ExtentLogger.pass("Entered password");
+    	sendKeys(passwdTextField,pwdText, WaitStrategy.VISIBLE,"password");
         return this;
     }
     
    public OrangeHomePage login() {
     	
-    	click(lgnButton,WaitStrategy.PRESENCE ); 
-    	ExtentLogger.pass("clicked login button");
+    	click(lgnButton,WaitStrategy.PRESENCE,"Login"); 
     	return new OrangeHomePage();
     }
    

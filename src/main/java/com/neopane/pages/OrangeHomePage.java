@@ -15,15 +15,13 @@ public final class OrangeHomePage extends BasePage {
     
     public OrangeHomePage clickonWelcome() {
     	
-    	click(avatar, WaitStrategy.PRESENCE );
-    	ExtentLogger.pass("Clicked Welcome avatar");
-       	return this;
+    	click(avatar, WaitStrategy.PRESENCE, "avatarwelcomeimage" );
+        return this;
     }
     
     public OrangeLoginPage clickLogout() {
     
-    	click(logoutLink,WaitStrategy.PRESENCE );
-    	ExtentLogger.pass("Clicked on logout button");
+    	click(logoutLink,WaitStrategy.PRESENCE,"logout" );
     	return new OrangeLoginPage();
     }
     

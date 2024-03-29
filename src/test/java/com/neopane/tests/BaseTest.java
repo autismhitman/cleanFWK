@@ -15,19 +15,7 @@ public class BaseTest {
     
 	protected BaseTest() {}
 	
-	@BeforeSuite
-	protected void setUpReports() {
-		
-		ExtentReport.initReports();
-	}
 	 
-	@AfterSuite
-	protected void tearDownReports() throws IOException {
-		
-		 
-			ExtentReport.closeReports();
-		  
-	}
 	
 	@BeforeMethod
 	protected void setUp() {

@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-29T15:11:03 IST" name="Suite" finished-at="2024-03-29T15:11:39 IST" duration-ms="36367">
+  <suite started-at="2024-03-29T19:06:02 IST" name="Suite" finished-at="2024-03-29T19:06:40 IST" duration-ms="37209">
     <groups>
     </groups>
-    <test started-at="2024-03-29T15:11:03 IST" name="Test" finished-at="2024-03-29T15:11:39 IST" duration-ms="36367">
+    <test started-at="2024-03-29T19:06:02 IST" name="Test" finished-at="2024-03-29T19:06:40 IST" duration-ms="37209">
       <class name="com.neopane.tests.OrangeHomeTest">
-        <test-method is-config="true" signature="setUpReports()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:02 IST" name="setUpReports" finished-at="2024-03-29T15:11:03 IST" duration-ms="985" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpReports -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:03 IST" name="setUp" finished-at="2024-03-29T15:11:19 IST" duration-ms="16836" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T19:06:02 IST" name="setUp" finished-at="2024-03-29T19:06:16 IST" duration-ms="13915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:03 IST" name="setUp" finished-at="2024-03-29T15:11:20 IST" duration-ms="16874" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T19:06:02 IST" name="setUp" finished-at="2024-03-29T19:06:17 IST" duration-ms="14117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginlogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:19 IST" name="loginlogoutTest" data-provider="loginTestData" finished-at="2024-03-29T15:11:27 IST" duration-ms="7109" status="PASS">
+        <test-method signature="loginlogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T19:06:16 IST" name="loginlogoutTest" data-provider="loginTestData" finished-at="2024-03-29T19:06:25 IST" duration-ms="9050" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginlogoutTest -->
-        <test-method signature="loginlogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:20 IST" name="loginlogoutTest" data-provider="loginTestData" finished-at="2024-03-29T15:11:38 IST" duration-ms="18934" status="FAIL">
+        <test-method signature="loginlogoutTest(java.lang.String, java.lang.String)[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T19:06:17 IST" name="loginlogoutTest" data-provider="loginTestData" finished-at="2024-03-29T19:06:37 IST" duration-ms="20736" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -57,7 +53,7 @@
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at com.neopane.waits.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:33)
-at com.neopane.pages.BasePage.click(BasePage.java:14)
+at com.neopane.pages.BasePage.click(BasePage.java:15)
 at com.neopane.pages.OrangeHomePage.clickonWelcome(OrangeHomePage.java:18)
 at com.neopane.tests.OrangeHomeTest.loginlogoutTest(OrangeHomeTest.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -81,9 +77,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4da77e1d196a09a14bf652f75b17a29e, findElement {using=css selector, value=p.oxd-userdropdown-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\NAVINS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51893/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4da77e1d196a09a14bf652f75b17a29e
+Command: [309dd94b28341f1681ba6737e6dddc11, findElement {using=css selector, value=p.oxd-userdropdown-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\NAVINS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53508}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53508/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 309dd94b28341f1681ba6737e6dddc11
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -110,18 +106,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginlogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:27 IST" name="tearDown" finished-at="2024-03-29T15:11:28 IST" duration-ms="971" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T19:06:25 IST" name="tearDown" finished-at="2024-03-29T19:06:27 IST" duration-ms="1463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:38 IST" name="tearDown" finished-at="2024-03-29T15:11:39 IST" duration-ms="417" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T19:06:38 IST" name="tearDown" finished-at="2024-03-29T19:06:40 IST" duration-ms="2064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReports()[pri:0, instance:com.neopane.tests.OrangeHomeTest@7133da86]" started-at="2024-03-29T15:11:39 IST" name="tearDownReports" finished-at="2024-03-29T15:11:41 IST" duration-ms="2181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReports -->
       </class> <!-- com.neopane.tests.OrangeHomeTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
