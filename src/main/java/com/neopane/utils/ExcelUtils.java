@@ -18,10 +18,11 @@ public final class ExcelUtils {
 
 		 
 		File file = new File(path);
-		FileInputStream fis;
-		try {
-			fis = new FileInputStream(file);
+		 
+		try(FileInputStream fis=new FileInputStream(file)) {
+			 
 			book = new XSSFWorkbook(fis);
+			
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();

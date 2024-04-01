@@ -8,6 +8,7 @@ import org.testng.ISuiteListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.neopane.annotations.FrameworkAnnotation;
 import com.neopane.reports.ExtentLogger;
 import com.neopane.reports.ExtentReport;
 
@@ -31,6 +32,11 @@ public class MyListener implements ITestListener, ISuiteListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		  ExtentReport.createTest(result.getMethod().getMethodName());
+		 // ExtentReport.createTest(result.getMethod().getDescription());
+		  ExtentReport.addAuthor(
+				  result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).author());
+		   ExtentReport
+		   .addCategory(result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).category());
 	}
 
 	@Override

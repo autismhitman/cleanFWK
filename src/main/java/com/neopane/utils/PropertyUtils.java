@@ -1,6 +1,5 @@
 package com.neopane.utils;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -22,20 +21,19 @@ public final  class  PropertyUtils {
 	
 	 
     static {
-    	try {
-    		FileInputStream fis = new FileInputStream(new File(FrameworkConstants.getConfigPath()));
-    		
-    		 prop.load(fis);
-    		 
-    		 prop.entrySet().forEach(entry->CONFIG_MAP.put(String.valueOf(entry.getKey()),String.valueOf(entry.getValue()).trim()));
-    		
+    	try(FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigPath()))  {
+    	 
+    	 prop.load(fis);
+   		 prop.entrySet()
+   		 .forEach(entry->CONFIG_MAP.put(String.valueOf(entry.getKey()),String.valueOf(entry.getValue()).trim()));
+    	 
     	}
     	catch(FileNotFoundException e) {
     		 e.printStackTrace();
     	}
     	catch(IOException e) {
    		 e.printStackTrace();
-   	}
+    	}
    }
     
     

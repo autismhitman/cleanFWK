@@ -18,7 +18,7 @@ public final class FrameworkConstants {
 	
 	private static final String EXCEL_PATH=  DIRECTORY_PATH + "//data//Data.xlsx";
 	
-	private static final String EXTENTREPORTFOLDERPATH= DIRECTORY_PATH +"//extent-test-output/";
+	private static final String EXTENTREPORTFOLDERPATH= System.getProperty("user.dir")+"//extent-test-output/";
 	
 	private static String extentReportFilePath = "";
 

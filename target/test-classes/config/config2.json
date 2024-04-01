@@ -6,5 +6,6 @@
  "overridereports":  "no",
  "passedstepsscreenshot" :"no",
  "failedstepsscreenshot" : "yes",
- "skippedstepsscreenshot" : "no"
+ "skippedstepsscreenshot" : "no",
+  "retryfailedtests": "yes"
  } 

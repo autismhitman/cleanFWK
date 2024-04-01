@@ -2,39 +2,79 @@
 <testng-results retried="1" ignored="0" total="4" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-01T12:19:27 IST" name="Suite" finished-at="2024-04-01T12:20:55 IST" duration-ms="87351">
+  <suite started-at="2024-04-01T17:51:15 IST" name="Suite" finished-at="2024-04-01T17:52:35 IST" duration-ms="79491">
     <groups>
     </groups>
-    <test started-at="2024-04-01T12:19:27 IST" name="Test" finished-at="2024-04-01T12:20:55 IST" duration-ms="87351">
+    <test started-at="2024-04-01T17:51:15 IST" name="Test" finished-at="2024-04-01T17:52:35 IST" duration-ms="79491">
       <class name="com.neopane.tests.OrangeHomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:19:29 IST" name="setUp" finished-at="2024-04-01T12:19:43 IST" duration-ms="13769" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:19:43 IST" name="loginlogoutTest" finished-at="2024-04-01T12:19:51 IST" duration-ms="8092" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:17 IST" name="setUp" finished-at="2024-04-01T17:51:28 IST" duration-ms="11233" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=navin, password=admin123, Execute=yes, TestCaseName=loginlogoutTest, username=Admin}]]>
+                <![CDATA[[Ljava.lang.Object;@7159a5cd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:17 IST" name="setUp" finished-at="2024-04-01T17:51:37 IST" duration-ms="20172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@58a2b4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:28 IST" name="loginlogoutTest" finished-at="2024-04-01T17:51:36 IST" duration-ms="7655" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=navin, password=admin123, Execute=yes, browser=chrome, TestCaseName=loginlogoutTest, username=Admin}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginlogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:19:51 IST" name="tearDown" finished-at="2024-04-01T12:19:52 IST" duration-ms="767" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:36 IST" name="tearDown" finished-at="2024-04-01T17:51:37 IST" duration-ms="750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:19:52 IST" name="setUp" finished-at="2024-04-01T12:19:59 IST" duration-ms="7007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method retried="true" signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:19:59 IST" name="loginlogoutTest" finished-at="2024-04-01T12:20:17 IST" duration-ms="17615" status="SKIP">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:37 IST" name="setUp" finished-at="2024-04-01T17:51:46 IST" duration-ms="8681" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=subs, password=admin123, Execute=yes, TestCaseName=loginlogoutTest, username=admin123}]]>
+                <![CDATA[[Ljava.lang.Object;@4f966719]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:37 IST" name="loginlogoutTest" finished-at="2024-04-01T17:51:43 IST" duration-ms="5669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=sharma, password=admin123, Execute=yes, browser=ff, TestCaseName=loginlogoutTest, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginlogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:43 IST" name="tearDown" finished-at="2024-04-01T17:51:47 IST" duration-ms="4145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method retried="true" signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:51:46 IST" name="loginlogoutTest" finished-at="2024-04-01T17:52:03 IST" duration-ms="17885" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=subs, password=admin123, Execute=yes, browser=chrome, TestCaseName=loginlogoutTest, username=admin123}]]>
               </value>
             </param>
           </params>
@@ -49,7 +89,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at com.neopane.waits.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:33)
 at com.neopane.pages.BasePage.click(BasePage.java:15)
 at com.neopane.pages.OrangeHomePage.clickonWelcome(OrangeHomePage.java:18)
-at com.neopane.tests.OrangeHomeTest.loginlogoutTest(OrangeHomeTest.java:25)
+at com.neopane.tests.OrangeHomeTest.loginlogoutTest(OrangeHomeTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,11 +97,11 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:840)
@@ -71,11 +111,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [70e22597a992470c283e0fcecd38d7aa, findElement {using=css selector, value=p.oxd-userdropdown-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\NAVINS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56071}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56071/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 70e22597a992470c283e0fcecd38d7aa
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+Command: [c196a1bd06a27f508f9a91c0d4af064f, findElement {using=css selector, value=p.oxd-userdropdown-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\NAVINS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54550}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54550/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c196a1bd06a27f508f9a91c0d4af064f
+at jdk.internal.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -100,19 +139,26 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginlogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:20:17 IST" name="tearDown" finished-at="2024-04-01T12:20:17 IST" duration-ms="649" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:52:03 IST" name="tearDown" finished-at="2024-04-01T17:52:05 IST" duration-ms="1269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:20:17 IST" name="setUp" finished-at="2024-04-01T12:20:24 IST" duration-ms="6805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:20:24 IST" name="loginlogoutTest" finished-at="2024-04-01T12:20:42 IST" duration-ms="17971" status="FAIL">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:52:05 IST" name="setUp" finished-at="2024-04-01T17:52:11 IST" duration-ms="6753" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=subs, password=admin123, Execute=yes, TestCaseName=loginlogoutTest, username=admin123}]]>
+                <![CDATA[[Ljava.lang.Object;@18ac53e8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:52:11 IST" name="loginlogoutTest" finished-at="2024-04-01T17:52:33 IST" duration-ms="21698" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=subs, password=admin123, Execute=yes, browser=chrome, TestCaseName=loginlogoutTest, username=admin123}]]>
               </value>
             </param>
           </params>
@@ -127,7 +173,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at com.neopane.waits.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:33)
 at com.neopane.pages.BasePage.click(BasePage.java:15)
 at com.neopane.pages.OrangeHomePage.clickonWelcome(OrangeHomePage.java:18)
-at com.neopane.tests.OrangeHomeTest.loginlogoutTest(OrangeHomeTest.java:25)
+at com.neopane.tests.OrangeHomeTest.loginlogoutTest(OrangeHomeTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,11 +181,11 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
 at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:94)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:840)
@@ -149,11 +195,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f10206ba3b3e19510f287e5ccf63c797, findElement {using=css selector, value=p.oxd-userdropdown-name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\NAVINS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56094}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56094/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f10206ba3b3e19510f287e5ccf63c797
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+Command: [5a9a1a4de5d4f7141f9571bb3f8c7a1d, findElement {using=css selector, value=p.oxd-userdropdown-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\NAVINS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54573/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a9a1a4de5d4f7141f9571bb3f8c7a1d
+at jdk.internal.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -178,26 +223,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginlogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:20:42 IST" name="tearDown" finished-at="2024-04-01T12:20:43 IST" duration-ms="439" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:20:43 IST" name="setUp" finished-at="2024-04-01T12:20:49 IST" duration-ms="6274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="secondTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:20:49 IST" name="secondTest" finished-at="2024-04-01T12:20:54 IST" duration-ms="5153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=admin123, Execute=yes, TestCaseName=secondTest, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- secondTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@53fdffa1]" started-at="2024-04-01T12:20:54 IST" name="tearDown" finished-at="2024-04-01T12:20:55 IST" duration-ms="367" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-01T17:52:33 IST" name="tearDown" finished-at="2024-04-01T17:52:35 IST" duration-ms="1248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

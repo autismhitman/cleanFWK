@@ -1,6 +1,5 @@
 package com.neopane.utils;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,9 +22,9 @@ public final  class  JsonUtils {
 	
 	 
     static {
-    	try {
-    		File file = new File(FrameworkConstants.getJsonConfigPath());
-    		CONFIG_MAP = new ObjectMapper().readValue(file, new TypeReference<HashMap<String, String>>(){});
+    	try(FileInputStream fis = new FileInputStream(FrameworkConstants.getJsonConfigPath())) {
+    		
+    		CONFIG_MAP = new ObjectMapper().readValue(fis, new TypeReference<HashMap<String, String>>(){});
  
     	}
     	catch(FileNotFoundException e) {
