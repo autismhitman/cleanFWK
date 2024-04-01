@@ -1,23 +1,26 @@
 package com.neopane.tests;
 
+import java.util.Map;
+
 import org.assertj.core.api.Assertions;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.neopane.listeners.RetryFailedTests;
 import com.neopane.pages.OrangeLoginPage;
-import com.neopane.reports.ExtentReport;
+import com.neopane.utils.DataProviderUtils;
 
 public final class OrangeHomeTest extends BaseTest {
 
 	private OrangeHomeTest () {}
 	
-	@Test(dataProvider="loginTestData")
-	public void loginlogoutTest(String uname, String pwd) {
+	@Test  
+	//(dataProvider="getData", dataProviderClass=DataProviderUtils.class, retryAnalyzer=RetryFailedTests.class )
+	public void loginlogoutTest(Map<String, String> hmap) {
 	      
 	   
 		 String title = new OrangeLoginPage() 
-		                    .enterUsername(uname)
-		                    .enterPasswd(pwd)
+		                    .enterUsername(hmap.get("username"))
+		                    .enterPasswd(hmap.get("password"))
 		                    .login()
 		                    .clickonWelcome()
 		                    .clickLogout()
@@ -29,13 +32,13 @@ public final class OrangeHomeTest extends BaseTest {
 	}
 	
 	
-	@Test(dataProvider="loginTestData")
-	public void secondTest(String uname, String pwd) {
+	@Test 
+	public void secondTest(Map<String, String> hmap) {
 	      
 	   
 		 String title = new OrangeLoginPage() 
-		                    .enterUsername(uname)
-		                    .enterPasswd(pwd)
+				 		     .enterUsername(hmap.get("username"))
+				 		    .enterPasswd(hmap.get("password"))
 		                    .login()
 		                    .clickonWelcome()
 		                    .clickLogout()
@@ -47,15 +50,5 @@ public final class OrangeHomeTest extends BaseTest {
 	}
 	
 	
-	@DataProvider(name="loginTestData", parallel=true)
-	public Object[][] getData(){
-		
-		return new Object[][] {
-			{"Admin1","admin123"},
-			 
-			 
-			
-		};
-		
-	}
+	
 }

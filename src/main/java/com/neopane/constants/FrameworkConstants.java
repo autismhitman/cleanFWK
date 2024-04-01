@@ -1,7 +1,8 @@
 package com.neopane.constants;
 
+import java.util.Date;
+
 import com.neopane.enums.ConfigProperties;
-import com.neopane.utils.JsonUtils;
 import com.neopane.utils.PropertyUtils;
 
 public final class FrameworkConstants {
@@ -9,13 +10,13 @@ public final class FrameworkConstants {
 	private FrameworkConstants() {
 	}
     
-	private static final String DIRECTORY_PATH = System.getProperty("user.dir");
+	private static final String DIRECTORY_PATH = System.getProperty("user.dir")+ "//src//test//resources";
 	
-	private static final String CONFIG_PATH = DIRECTORY_PATH + "//src//test//resources//config//config.properties";
+	private static final String CONFIG_PATH = DIRECTORY_PATH + "//config//config.properties";
 
-	private static final String JSONCONFIG_PATH =  DIRECTORY_PATH + "//src//test//resources//config//config2.json";
+	private static final String JSONCONFIG_PATH =  DIRECTORY_PATH + "//config//config2.json";
 	
-	private static final String EXCEL_PATH=  DIRECTORY_PATH + "//src//test//resources//data//Data.xlsx";
+	private static final String EXCEL_PATH=  DIRECTORY_PATH + "//data//Data.xlsx";
 	
 	private static final String EXTENTREPORTFOLDERPATH= DIRECTORY_PATH +"//extent-test-output/";
 	
@@ -57,7 +58,7 @@ public final class FrameworkConstants {
 
 	private static String createReportPath() {
 		 if(PropertyUtils.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("no")) {
-			 
+			  
 			 return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
 		 }
 		 else {

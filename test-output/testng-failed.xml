@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite data-provider-thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite data-provider-thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.neopane.listeners.MyListener"/>
     <listener class-name="com.neopane.listeners.MyMethodInterceptor"/>
+    <listener class-name="com.neopane.listeners.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
       <class name="com.neopane.tests.OrangeHomeTest">
         <methods>
           <include name="tearDown"/>
-          <include name="secondTest" invocation-numbers="0 0 0 0"/>
           <include name="setUp"/>
+          <include name="loginlogoutTest" invocation-numbers="1 1"/>
         </methods>
       </class> <!-- com.neopane.tests.OrangeHomeTest -->
     </classes>

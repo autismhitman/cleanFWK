@@ -4,6 +4,7 @@
 <listeners>
  	<listener class-name="com.neopane.listeners.MyListener"/>
  	<listener class-name="com.neopane.listeners.MyMethodInterceptor"/>
+ 	<listener class-name="com.neopane.listeners.AnnotationTransformer"/>
 </listeners>
   <test thread-count="1" name="Test" parallel="methods" >
     <classes>
