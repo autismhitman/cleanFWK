@@ -4,7 +4,7 @@
  "username" : "Admin",
  "password" : "admin123",
  "overridereports":  "no",
- "passedstepsscreenshot" :"yes",
+ "passedstepsscreenshot" :"no",
  "failedstepsscreenshot" : "yes",
  "skippedstepsscreenshot" : "no"
  } 

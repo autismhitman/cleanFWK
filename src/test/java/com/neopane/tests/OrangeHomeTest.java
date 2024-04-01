@@ -28,12 +28,31 @@ public final class OrangeHomeTest extends BaseTest {
                          
 	}
 	
+	
+	@Test(dataProvider="loginTestData")
+	public void secondTest(String uname, String pwd) {
+	      
+	   
+		 String title = new OrangeLoginPage() 
+		                    .enterUsername(uname)
+		                    .enterPasswd(pwd)
+		                    .login()
+		                    .clickonWelcome()
+		                    .clickLogout()
+		                    .getTitle();
+		
+		    Assertions.assertThat(title)
+		              .isEqualTo("OrangeHRM");
+                         
+	}
+	
+	
 	@DataProvider(name="loginTestData", parallel=true)
 	public Object[][] getData(){
 		
 		return new Object[][] {
-			{"Admin","admin123"},
-			{"admin1","Admin1"} 
+			{"Admin1","admin123"},
+			 
 			 
 			
 		};

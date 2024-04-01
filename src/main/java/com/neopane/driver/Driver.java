@@ -29,7 +29,7 @@ public final class Driver {
 			WebDriverManager.chromedriver().setup();
 			DriverManager.setDriver(new ChromeDriver(options));
 			DriverManager.getDriver().manage().window().maximize();
-			DriverManager.getDriver().get(JsonUtils.get(ConfigProperties.URL));
+			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
 			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 			 
 		}

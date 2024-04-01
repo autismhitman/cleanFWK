@@ -1,6 +1,7 @@
 package com.neopane.listeners;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
@@ -40,6 +41,8 @@ public class MyListener implements ITestListener, ISuiteListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		ExtentLogger.fail(result.getMethod().getMethodName() + " is failed", true); 
+		ExtentLogger.fail(result.getThrowable().toString());
+		ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
 	}
 
 	@Override
