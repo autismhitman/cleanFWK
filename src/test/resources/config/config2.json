@@ -7,5 +7,6 @@
  "passedstepsscreenshot" :"no",
  "failedstepsscreenshot" : "yes",
  "skippedstepsscreenshot" : "no",
-  "retryfailedtests": "yes"
+  "retryfailedtests": "yes",
+  "runmode" : "remote"
  } 

@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 
 import com.neopane.driver.DriverManager;
 import com.neopane.enums.WaitStrategy;
+import com.neopane.factories.ExplicitWaitFactory;
 import com.neopane.reports.ExtentLogger;
-import com.neopane.waits.ExplicitWaitFactory;
 
 public class BasePage {
 	

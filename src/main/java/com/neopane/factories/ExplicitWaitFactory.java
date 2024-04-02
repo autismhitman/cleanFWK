@@ -1,4 +1,4 @@
-package com.neopane.waits;
+package com.neopane.factories;
 
 import java.time.Duration;
 
