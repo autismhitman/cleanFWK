@@ -11,6 +11,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.neopane.constants.FrameworkConstants;
 import com.neopane.enums.ConfigProperties;
+import com.neopane.exceptions.JsonFileUsageException;
 
 public final  class  JsonUtils {
 	
@@ -27,19 +28,18 @@ public final  class  JsonUtils {
     		CONFIG_MAP = new ObjectMapper().readValue(fis, new TypeReference<HashMap<String, String>>(){});
  
     	}
-    	catch(FileNotFoundException e) {
-    		 e.printStackTrace();
-    	}
+    	 
     	catch(IOException e) {
-   		 e.printStackTrace();
-   	}
+    		   e.printStackTrace();
+    		    System.exit(0);    	
+    		 }
    }
     
     
     public static String get(ConfigProperties key) {
     	
     	 if(Objects.isNull(key)|| Objects.isNull(CONFIG_MAP.get(key.name().toLowerCase()))) {
-    		 throw new RuntimeException(" The Propertry name " +key + "is not found!, please check");
+    		 throw new JsonFileUsageException(" The Propertry name " +key + "is not found!, please check");
     	 }
 		return CONFIG_MAP.get(key.name().toLowerCase());
     }

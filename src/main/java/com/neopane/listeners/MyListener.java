@@ -1,6 +1,5 @@
 package com.neopane.listeners;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import org.testng.ISuite;
@@ -21,12 +20,9 @@ public class MyListener implements ITestListener, ISuiteListener {
 
 	@Override
 	public void onFinish(ISuite suite) {
-		  try {
+		 
 			ExtentReport.closeReports();
-		} catch (IOException e) {
-			 
-			e.printStackTrace();
-		}
+		 
 	}
 
 	@Override

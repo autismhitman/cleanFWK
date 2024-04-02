@@ -10,7 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.neopane.driver.DriverManager;
 import com.neopane.enums.WaitStrategy;
 
-public class ExplicitWaitFactory {
+public final class ExplicitWaitFactory {
+	
+	private ExplicitWaitFactory() {}
 	
 	
 	public static WebElement performExplicitWait(WaitStrategy waitStrategy, By by) {

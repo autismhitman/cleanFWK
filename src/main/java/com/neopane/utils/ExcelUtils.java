@@ -8,11 +8,14 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.neopane.exceptions.FrameworkException;
+import com.neopane.exceptions.InvalidPathForExcelException;
+
 public final class ExcelUtils {
 
-	public static XSSFWorkbook book;
+	   XSSFWorkbook book;
 
-	public static XSSFSheet sheet;
+	   XSSFSheet sheet;
 
 	public ExcelUtils(String path) {
 
@@ -25,21 +28,21 @@ public final class ExcelUtils {
 			
 		} catch (FileNotFoundException e) {
 
-			e.printStackTrace();
+		    throw new InvalidPathForExcelException("File path not found ");
 		} catch (IOException e) {
 
-			e.printStackTrace();
+			 throw new FrameworkException("Some IO exception");
 		}
 
 	}
 
-	public int getTotalRow(String name) {
+	public  int getTotalRow(String name) {
 		sheet = book.getSheet(name);
 		 
 		return sheet.getLastRowNum();
 	}
 
-	public int getTotalColumn(String name) {
+	public  int getTotalColumn(String name) {
 		sheet = book.getSheet(name);
 
 		return sheet.getRow(0).getLastCellNum();

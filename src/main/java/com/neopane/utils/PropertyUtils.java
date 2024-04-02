@@ -10,6 +10,7 @@ import java.util.Properties;
 
 import com.neopane.constants.FrameworkConstants;
 import com.neopane.enums.ConfigProperties;
+import com.neopane.exceptions.PropertyFileUsageException;
 
 public final  class  PropertyUtils {
 	
@@ -28,19 +29,18 @@ public final  class  PropertyUtils {
    		 .forEach(entry->CONFIG_MAP.put(String.valueOf(entry.getKey()),String.valueOf(entry.getValue()).trim()));
     	 
     	}
-    	catch(FileNotFoundException e) {
-    		 e.printStackTrace();
-    	}
+    	 
     	catch(IOException e) {
-   		 e.printStackTrace();
-    	}
+   		   e.printStackTrace();
+   		    System.exit(0);    	
+   		 }
    }
     
     
     public static String get(ConfigProperties key) {
     	
     	 if(Objects.isNull(key)|| Objects.isNull(CONFIG_MAP.get(key.name().toLowerCase()))) {
-    		 throw new RuntimeException(" The Propertry name " +key + "is not found!, please check");
+    		 throw new PropertyFileUsageException(" The Propertry name " +key + "is not found!, please check");
     	 }
 		return CONFIG_MAP.get(key.name().toLowerCase());
     }

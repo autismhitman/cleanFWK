@@ -31,13 +31,18 @@ public final class ExtentReport {
 		}
 	}
 
-	public static void closeReports() throws IOException {
+	public static void closeReports()  {
 		if (Objects.nonNull(extent)) {
 			extent.flush();
 
 		}
 		ExtentManager.unload();
-		Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentReportFilePath()).toURI());
+		try {
+			Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentReportFilePath()).toURI());
+		} catch (IOException e) {
+		 
+			e.printStackTrace();
+		}
 
 	}
 
