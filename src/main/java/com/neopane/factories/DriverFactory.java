@@ -33,7 +33,7 @@ public final class DriverFactory {
 
 				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setBrowserName("chrome");
-				driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+				driver= new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), cap);
 
 			} else {
 
@@ -53,7 +53,7 @@ public final class DriverFactory {
 
 				DesiredCapabilities cap = new DesiredCapabilities();
 				cap.setBrowserName("ff");
-				driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+				driver= new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), cap);
 
 			} else {
 

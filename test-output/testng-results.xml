@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-02T18:03:11 IST" name="Suite" finished-at="2024-04-02T18:03:42 IST" duration-ms="31283">
+  <suite started-at="2024-04-04T12:09:59 IST" name="Suite" finished-at="2024-04-04T12:10:24 IST" duration-ms="24348">
     <groups>
     </groups>
-    <test started-at="2024-04-02T18:03:11 IST" name="Test" finished-at="2024-04-02T18:03:42 IST" duration-ms="31283">
+    <test started-at="2024-04-04T12:09:59 IST" name="Test" finished-at="2024-04-04T12:10:24 IST" duration-ms="24348">
       <class name="com.neopane.tests.OrangeHomeTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-02T18:03:13 IST" name="setUp" finished-at="2024-04-02T18:03:32 IST" duration-ms="19226" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-04T12:10:03 IST" name="setUp" finished-at="2024-04-04T12:10:14 IST" duration-ms="10923" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@5e5073ab]]>
+                <![CDATA[[Ljava.lang.Object;@504e1599]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-02T18:03:32 IST" name="loginlogoutTest" finished-at="2024-04-02T18:03:41 IST" duration-ms="8660" status="PASS">
+        <test-method signature="loginlogoutTest(java.util.Map)[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-04T12:10:14 IST" name="loginlogoutTest" finished-at="2024-04-04T12:10:23 IST" duration-ms="8945" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginlogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-02T18:03:41 IST" name="tearDown" finished-at="2024-04-02T18:03:42 IST" duration-ms="1326" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neopane.tests.OrangeHomeTest@28f2a10f]" started-at="2024-04-04T12:10:23 IST" name="tearDown" finished-at="2024-04-04T12:10:24 IST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

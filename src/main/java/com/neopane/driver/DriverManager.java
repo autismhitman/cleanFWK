@@ -1,5 +1,7 @@
 package com.neopane.driver;
 
+import java.util.Objects;
+
 import org.openqa.selenium.WebDriver;
 
 public final class DriverManager {
@@ -17,11 +19,13 @@ public final class DriverManager {
 	}
 
 
-	public static void setDriver(WebDriver dref) {
-		 dr.set(dref);
+	 static void setDriver(WebDriver dref) {
+		 if(Objects.nonNull(dref)) 
+			 dr.set(dref);
+		 
 	}
 	
-	public static void unload() {
+	 static void unload() {
 		dr.remove();
 	}
 }

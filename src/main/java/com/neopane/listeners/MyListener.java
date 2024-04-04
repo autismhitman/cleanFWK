@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 import com.neopane.annotations.FrameworkAnnotation;
 import com.neopane.reports.ExtentLogger;
 import com.neopane.reports.ExtentReport;
+import com.neopane.utils.ElkUtils;
 
 public class MyListener implements ITestListener, ISuiteListener {
 
@@ -38,6 +39,7 @@ public class MyListener implements ITestListener, ISuiteListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		 ExtentLogger.pass(result.getMethod().getMethodName() + " is passed");
+		 ElkUtils.getElkDocs(result.getMethod().getMethodName(), "pass");
 	}
 
 	@Override
@@ -45,11 +47,13 @@ public class MyListener implements ITestListener, ISuiteListener {
 		ExtentLogger.fail(result.getMethod().getMethodName() + " is failed", true); 
 		ExtentLogger.fail(result.getThrowable().toString());
 		ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
+		ElkUtils.getElkDocs(result.getMethod().getMethodName(), "fail");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		ExtentLogger.skip(result.getMethod().getMethodName() + " is skipped"); 
+		ElkUtils.getElkDocs(result.getMethod().getMethodName(), "skip");
 	}
 	
 	

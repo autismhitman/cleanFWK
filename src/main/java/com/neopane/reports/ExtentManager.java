@@ -1,5 +1,7 @@
 package com.neopane.reports;
 
+import java.util.Objects;
+
 import com.aventstack.extentreports.ExtentTest;
 
 public final class ExtentManager {
@@ -13,7 +15,8 @@ public final class ExtentManager {
 	}
 
 	 static void setExtTest( ExtentTest  extTestRef) {
-		 extTest.set(extTestRef); 
+		 if(Objects.nonNull(extTestRef))
+			  extTest.set(extTestRef); 
 	}
 	
 	 static void unload() {

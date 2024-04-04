@@ -30,7 +30,15 @@ public final class FrameworkConstants {
 		return extentReportFilePath;
 	}
 
-	 
+	private static String createReportPath() {
+		 if(PropertyUtils.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("no")) {
+			  
+			 return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
+		 }
+		 else {
+			 return EXTENTREPORTFOLDERPATH+"/index.html";
+		 }
+	}
 
 	public static String getDirectoryPath() {
 		return DIRECTORY_PATH;
@@ -56,15 +64,7 @@ public final class FrameworkConstants {
 
 
 
-	private static String createReportPath() {
-		 if(PropertyUtils.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("no")) {
-			  
-			 return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
-		 }
-		 else {
-			 return EXTENTREPORTFOLDERPATH+"/index.html";
-		 }
-	}
+	
 
 
 

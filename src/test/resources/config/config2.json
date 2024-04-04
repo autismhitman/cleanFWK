@@ -8,5 +8,5 @@
  "failedstepsscreenshot" : "yes",
  "skippedstepsscreenshot" : "no",
   "retryfailedtests": "yes",
-  "runmode" : "remote"
+  "runmode" : "local"
  } 
